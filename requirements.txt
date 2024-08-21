@@ -9,3 +9,8 @@ scikit-learn
 
 # For word2vec
 gensim
+
+# For LSTM
+keras
+tensorflow
+Keras-Preprocessing
