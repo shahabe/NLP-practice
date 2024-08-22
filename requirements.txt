@@ -2,15 +2,18 @@ jupyter
 pandas
 plotly
 matplotlib
+
+# For Fetch-Reddit-data
+praw
+
+# For word2vec
 seaborn
 wordcloud
 nltk
 scikit-learn
-
-# For word2vec
 gensim
 
-# For LSTM
+# For Deep Learning Architectures for Sequence Processing
 keras
 tensorflow
 Keras-Preprocessing

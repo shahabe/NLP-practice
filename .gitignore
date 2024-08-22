@@ -166,3 +166,4 @@ cython_debug/
 word2vec/data/*
 Sentiment_Analysis_of_Amazon_Food_Reviews/data/*
 Deep Learning Architectures for Sequence Processing/data/*
+Fetch-Reddit-data/data/*
