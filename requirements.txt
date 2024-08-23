@@ -17,3 +17,6 @@ gensim
 keras
 tensorflow
 Keras-Preprocessing
+
+# For Part of Speech Tagging and Named Entities
+spacy
