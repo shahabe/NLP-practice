@@ -163,7 +163,7 @@ cython_debug/
 
 
 # Files and Folders
-word2vec/data/*
-Sentiment_Analysis_of_Amazon_Food_Reviews/data/*
-Deep Learning Architectures for Sequence Processing/data/*
-Fetch-Reddit-data/data/*
+2- Fetch-Reddit-data/data/*
+5- Sentiment Analysis of Amazon Food Reviews/data/*
+6- word2vec (Glove)/data/*
+7- Deep Learning Architectures for Sequence Processing/data/*
