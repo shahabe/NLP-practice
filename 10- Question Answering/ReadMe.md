@@ -1,9 +1,9 @@
 ## Requirements
-flask
-WTForms==2.3.3
-torch
-transformers
-tf-keras 
+flask  
+WTForms==2.3.3  
+torch  
+transformers  
+tf-keras  
 
 
 ### references
