@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Test API</title>
+       <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
+       <link rel="stylesheet" href="static/bootstrap-theme.min.css">
+       <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+ <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+    </head>
+    <body>
+ 
+ 
+<div class="container">
+ 
+  
+    <ul>
+  <li><a class="active" href="/">Query Model</a></li>
+
+  </ul> 
+
+  <h2>DistilBERT Base Cased</h2>
+  <form  action="" method="post" role="form">
+    {{ form.csrf }}
+    <div class="form-group">
+      <!-- <label for="name">Query:</label> -->
+      <input type="textarea" class="form-control" id="name" name="name" placeholder="Context">
+      <br>
+      <input type="text" class="form-control" id="name" name="name2" placeholder="Question">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="reset" class="btn btn-success">Reset</button>
+  </form>
+ 
+  <br>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+ 
+        
+            {% if "Error" not in messages[0][1]: %}
+                <div class="alert alert-info">
+                <strong>Phrase: </strong> {{ messages[0][1] }}
+                <br>
+                <br>
+                <strong>Question: </strong> {{ messages[1][1] }}
+                <br>
+                <br>
+                <strong>Answer: </strong> {{ messages[2][1] }}
+                <br>
+                <strong>Confidence: </strong> {{ messages[3][1] }}
+
+                </div>
+            {% endif %}
+ 
+            {% if "Error" in messages[0][1]: %}
+                <div class="alert alert-warning">
+                {{ messages[0][1] }}
+                </div>
+            {% endif %}
+        
+            {% endif %}
+        {% endwith %}
+ 
+</div>
+<br>      
+</div>
+</div>
+</body>
+</html>

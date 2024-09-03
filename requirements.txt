@@ -23,3 +23,10 @@ spacy
 
 # For Information Extraction
 benepar
+
+# For Question Answering
+flask
+WTForms==2.3.3
+torch
+transformers
+tf-keras
